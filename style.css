@@ -41,6 +41,25 @@ body.dark-yellow {
   --primary-color-dark: rgb(146, 146, 16);
 }
 
+body.dark-green {
+  --bg-color : rgb(148, 224, 148);
+  --text-color: white;
+  --primary-color: rgba(9, 68, 9, 0.705);
+  --primary-color-dark: rgba(2, 29, 2, 0.705);
+}
+body.dark-grey {
+  --bg-color : rgba(58, 57, 57, 0.418);
+  --text-color: white;
+  --primary-color: rgb(116, 113, 113);
+  --primary-color-dark: rgb(58, 57, 57);
+}
+body.dark-gradiente {
+  --bg-color: linear-gradient(to right, #5953C9, #C13993, #FB9447);
+  --text-color: white;
+  --primary-color: linear-gradient(to right, #3a3680, #851760, #ac6027);
+  --primary-color-dark: linear-gradient(to right, #433f8a, #5a093f, #4e2708);
+}
+
 body {
   background: var(--bg-color);
   color: var(--text-color);
@@ -88,7 +107,7 @@ ul li a {
   height: 53px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   color: var(--text-color);
   background: var(--primary-color);
   text-transform: uppercase;
@@ -96,12 +115,18 @@ ul li a {
 
   margin-bottom: 16px;
   border-radius: 6px;
+  padding-left: 95px;
 
   transition: background 400ms;
 }
 
 ul li a:hover{
   background: var(--primary-color-dark);
+}
+
+ul li a i {
+  padding-right: 10px;
+  font-size: 2em;
 }
 
 footer {
@@ -119,6 +144,7 @@ footer:hover {
 footer a {
   color: var(--text-color);
 }
+
 
 
 
